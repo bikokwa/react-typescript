@@ -1,8 +1,8 @@
 import React from "react";
-import Todo from "../models/todo";
+import classes from "./TodoItem.module.css";
 
 const TodoItem: React.FC<{ todo: string }> = (props) => {
-  return <li>{props.todo}</li>;
+  return <li className={classes.item}>{props.todo}</li>;
 };
 
 export default TodoItem;
